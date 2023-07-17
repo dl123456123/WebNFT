@@ -1,0 +1,76 @@
+.ArtistInfo {
+    padding: 0 6rem;
+    transform: translateY(-7rem);
+}
+
+.ArtistInfo_box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.ArtistInfo_box_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ArtistInfo_box_title_button {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ArtistInfo_box_title_button_box_1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--icons-color);
+    cursor: pointer;
+}
+
+.ArtistInfo_box_title_button_box_2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--icons-color);
+    background-color: var(--main-bg-color);
+    cursor: pointer;
+}
+
+.ArtistInfo_box_status {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ArtistInfo_box_status_box h2 {
+    font-size: 2rem;
+}
+
+.ArtistInfo_box_status_box span {
+    font-size: 1.2rem;
+}
+
+.ArtistInfo_box_bio_title,
+.ArtistInfo_box_link_title {
+    color: var(--icons-color);
+}
+
+.ArtistInfo_box_link_box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 45em) {
+    .ArtistInfo_box_title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
